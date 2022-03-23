@@ -1,7 +1,6 @@
 package nl.vodafoneziggo.assignment.order;
 
 import io.swagger.v3.oas.annotations.tags.Tag;
-import java.util.Collections;
 import java.util.List;
 import javax.validation.Valid;
 import lombok.RequiredArgsConstructor;

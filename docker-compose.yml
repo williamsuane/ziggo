@@ -1,0 +1,7 @@
+version: '2.4'
+services:
+  ziggo-service:
+    image: williamsuane/ziggo-assignment:0.0.1-SNAPSHOT
+    ports:
+      - "8080:8080"
+    mem_limit: 512m

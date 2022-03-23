@@ -28,6 +28,10 @@ springdoc:
     operationsSorter: method
     disable-swagger-default-url: true
 
+ziggo:
+  url:
+    user-url: https://reqres.in/api/users?page={page}
+
 logging:
   level:
     nl:

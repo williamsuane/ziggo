@@ -9,6 +9,7 @@ import lombok.Getter;
 @Getter
 @AllArgsConstructor
 public class UserDto {
+
   private int id;
   private final String email;
   @JsonProperty(value = "first_name")

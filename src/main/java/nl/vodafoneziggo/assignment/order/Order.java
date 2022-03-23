@@ -24,6 +24,7 @@ import lombok.ToString;
 @ToString
 @Table(name = "orders") // h2 is not happy with table named order
 public class Order {
+
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
   private Long id;

@@ -1,0 +1,9 @@
+{
+  "properties": [
+    {
+      "name": "ziggo.url.user-url",
+      "type": "java.lang.String",
+      "description": "Description for ziggo.url.users."
+    }
+  ]
+}

@@ -3,11 +3,11 @@ package nl.vodafoneziggo.assignment.order;
 
 import nl.vodafoneziggo.assignment.model.OrderPostRequestBody;
 
-public class OrderRequestFactory {
+class OrderRequestFactory {
 
-  public static OrderPostRequestBody newPostRequestBody() {
+  public static OrderPostRequestBody newValidPostRequestBody() {
     return new OrderPostRequestBody()
-        .email("test@test.com")
+        .email("george.edwards@reqres.in")
         .productId("123");
   }
 }

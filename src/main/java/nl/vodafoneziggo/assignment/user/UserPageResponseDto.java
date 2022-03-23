@@ -9,7 +9,7 @@ import lombok.Getter;
 @Builder
 @Getter
 @AllArgsConstructor
-public class UserPageResponseDto {
+class UserPageResponseDto {
 
   private int page;
   @JsonProperty(value = "per_page")
