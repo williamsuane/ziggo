@@ -1,0 +1,81 @@
+openapi: 3.0.1
+info:
+  title: VodafoneZiggo Order API
+  description: API Example
+  contact:
+    name: VodafoneZiggo
+    url: https://www.vodafoneziggo.nl/
+    email: someone@vodafoneziggo.nl
+  version: v1
+servers:
+  - url: http://localhost:8080
+tags:
+  - name: Orders
+    description: Orders API
+paths:
+  /api/v1/orders:
+    get:
+      tags:
+        - Orders
+      summary: List all orders
+      operationId: listAll
+      responses:
+        "200":
+          description: OK
+          content:
+            'application/json':
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/OrderGetResponseBody'
+    post:
+      tags:
+        - Orders
+      summary: Create an order
+      operationId: create
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/OrderPostRequestBody'
+        required: true
+      responses:
+        "200":
+          description: OK
+          content:
+            'application/json':
+              schema:
+                $ref: '#/components/schemas/OrderPostResponseBody'
+components:
+  schemas:
+    OrderPostRequestBody:
+      required:
+        - email
+        - productId
+      type: object
+      properties:
+        email:
+          type: string
+          format: email
+          minLength: 1
+        productId:
+          type: string
+          minLength: 1
+    OrderPostResponseBody:
+      type: object
+      properties:
+        orderId:
+          type: string
+    OrderGetResponseBody:
+      type: object
+      properties:
+        email:
+          type: string
+        orderId:
+          type: string
+        first_name:
+          type: string
+        last_name:
+          type: string
+        productId:
+          type: string

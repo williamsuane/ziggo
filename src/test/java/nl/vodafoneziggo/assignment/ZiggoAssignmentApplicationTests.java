@@ -1,0 +1,13 @@
+package nl.vodafoneziggo.assignment;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.boot.test.context.SpringBootTest;
+
+@SpringBootTest
+class ZiggoAssignmentApplicationTests {
+
+  @Test
+  void contextLoads() {
+  }
+
+}
