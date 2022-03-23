@@ -1,4 +1,4 @@
-![build](https://img.shields.io/github/checks-status/williamsuane/ziggo/main)
+![build](https://img.shields.io/github/workflow/status/williamsuane/ziggo/Java%20CI%20with%20Maven)
 
 
 # Ziggo Test
