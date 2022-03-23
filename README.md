@@ -1,3 +1,6 @@
+![build](https://img.shields.io/github/checks-status/williamsuane/ziggo/main)
+
+
 # Ziggo Test
 
 ## Pre-requisites
