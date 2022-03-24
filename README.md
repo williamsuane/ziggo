@@ -1,6 +1,5 @@
 ![build](https://img.shields.io/github/workflow/status/williamsuane/ziggo/Java%20CI%20with%20Maven)
 
-
 # Ziggo Test
 
 ## Pre-requisites
@@ -9,7 +8,7 @@
 
 ## Image Setup
 
-1. In the terminal go to the folder `ziggo-assignment` and run the command `.\mvnw clean package jib:dockerBuild`
+1. In the terminal go to the folder `ziggo-assignment` and run the command `./mvnw clean package jib:dockerBuild`
 
 ## Running
 
@@ -20,7 +19,7 @@
 **Locally**
 
 1. In the terminal go to the same root level as `ziggo-assignment` and run the
-   command `.\mvnw clean compile spring-boot:run`
+   command `./mvnw clean compile spring-boot:run`
 
 ## Testing
 
